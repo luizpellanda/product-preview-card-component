@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;    
+}
+
+.container {
+    display: flex;
+    height: 32rem;
+    width: 42.8rem;
+}
+
+.image {
+    width: 50%;
+    height: 100%;
+    background-image: url(../../images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    width: 50%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 2.21rem;
+    text-align: left;
+}
+
+.perfume {
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: hsla(228, 12%, 48%, 1);;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 2.3rem;
+    color: hsla(212, 21%, 14%, 1);
+    margin: 1.5rem 0;
+    line-height: 32px;
+    font-family: Fraunces;
+    padding-right: 0.8rem;
+}
+
+.text {
+    color: hsla(228, 12%, 48%, 1);
+    line-height: 23px;
+    text-align: left;
+    padding-right: 0.8rem;
+}
+
+.price {
+    margin: 2.1rem 0;
+    display: flex;
+    justify-content: left;
+    gap: 1.35rem;
+    align-items: center;
+}
+
+.promotional-price {
+    font-family: Fraunces;
+    color: hsla(157, 36%, 37%, 1);
+    font-weight: 700;
+    font-size: 2.1rem;
+}
+
+.real-price {
+    font-weight: 500;
+    color: hsla(228, 12%, 48%, 1);
+    text-decoration: line-through;
+}
+
+button {
+    color: white;
+    border: none;
+    background-color: hsla(157, 36%, 37%, 1);
+    height: 48px;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+}
+
+button:hover {
+    background-color: hsla(157, 43%, 18%, 1);
+
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding: 28px 16px;
+    }
+
+    .image {
+        background-image: url('../../images/image-product-mobile.jpg');
+        width: 100%;
+        height: 50%;
+    }
+
+    .content {
+        width: 100%;
+        padding: 24px;
+        min-height: 50%;
+    }
+
+    .title {
+        margin: 12px 0;
+    }
+
+}
